@@ -20,8 +20,8 @@
         </div>
         <div>
             <ul>
-                <li>Your name</li>
-                <li> A date following this format dd/mm/yyyy</li>
+                <li>Markus Karl Mägi</li>
+                <li>18/09/2023</li>
                 <li> Software Engineering </li>
             </ul>
         </div>
@@ -31,6 +31,23 @@
     </section>
     <section>
         <h1>Courses</h1>
+        <form class="course-form" id="courseForm">
+
+            <label for="courseTitle">Course Title:</label> <br>
+            <input type="text" id="courseTitle" name="courseTitle"> <br>
+
+            <label for="semester">Semester</label> <br>
+            <select id="semester" name="semester">
+                <option value="Fall">Fall</option>
+                <option value="Spring">Spring</option>
+            </select> <br>
+            <label><b>Attendace</b></label> <br>
+            <input type="radio" name="food" /> : Virtual Attendace<br />
+            <input type="radio" name="food" /> : Physical Attendace<br />
+
+            <button type="button" onclick="addCourse()">Add Course</button>
+        </form>
+
         <table>
             <thead>
             <tr>
